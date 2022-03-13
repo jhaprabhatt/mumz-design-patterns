@@ -2,7 +2,7 @@ package com.mumz.learn.design.patterns.memento;
 
 /**
  * Memento pattern
- *
+ * <p>
  * 1. Helps in providing undo functionality to applications
  * 2. <code>Editor</code> doesnt need to maintain history as it breaks the SRP
  * 3. State is maintained in <code>History</code> with the help of <code>EditorState</code>
@@ -18,17 +18,20 @@ public class MementoApplication {
         addContent("Second", editor, history);
         addContent("Third", editor, history);
 
-        System.out.println("Current Editor Content: " + editor.getContent());
+        editor.print();
 
-        undo(editor, history);
-        undo(editor, history);
-        undo(editor, history);
+        undoAndPrint(editor, history);
+        undoAndPrint(editor, history);
+        undoAndPrint(editor, history);
+        undoAndPrint(editor, history);
     }
 
-    private static void undo(Editor editor,
-                             History history) {
+    private static void undoAndPrint(
+            final Editor editor,
+            final History history
+    ) {
         editor.restore(history.pop());
-        System.out.println("Editor Content After Undo: " + editor.getContent());
+        editor.print();
     }
 
     private static void addContent(
@@ -36,7 +39,7 @@ public class MementoApplication {
             final Editor editor,
             final History history
     ) {
-        editor.setContent(content);
+        editor.addContent(content);
         history.push(editor.createState());
     }
 }
