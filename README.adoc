@@ -1,0 +1,4 @@
+== Repo containing code samples for different Design Patterns
+
+- Follow the code in each package for understanding
+- No associated unit tests
