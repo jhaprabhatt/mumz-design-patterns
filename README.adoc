@@ -2,3 +2,4 @@
 
 - Follow the code in each package for understanding
 - No associated unit tests
+- subpackge `excercise` represent the solution for each excercise
