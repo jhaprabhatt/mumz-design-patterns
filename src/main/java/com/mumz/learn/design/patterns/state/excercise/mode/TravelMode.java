@@ -1,4 +1,4 @@
-package com.mumz.learn.design.patterns.state.tools.excercise.mode;
+package com.mumz.learn.design.patterns.state.excercise.mode;
 
 public interface TravelMode {
 

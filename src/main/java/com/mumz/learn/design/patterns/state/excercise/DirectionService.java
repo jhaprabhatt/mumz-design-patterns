@@ -1,6 +1,6 @@
-package com.mumz.learn.design.patterns.state.tools.excercise;
+package com.mumz.learn.design.patterns.state.excercise;
 
-import com.mumz.learn.design.patterns.state.tools.excercise.mode.TravelMode;
+import com.mumz.learn.design.patterns.state.excercise.mode.TravelMode;
 
 import static java.util.Objects.requireNonNull;
 
@@ -18,6 +18,6 @@ public class DirectionService {
 
     public Object getDirection() {
         requireNonNull(this.travelMode);
-        return travelMode.getEta();
+        return travelMode.getDirection();
     }
 }

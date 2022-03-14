@@ -1,6 +1,6 @@
-package com.mumz.learn.design.patterns.state.tools.excercise.mode.impl;
+package com.mumz.learn.design.patterns.state.excercise.mode.impl;
 
-import com.mumz.learn.design.patterns.state.tools.excercise.mode.TravelMode;
+import com.mumz.learn.design.patterns.state.excercise.mode.TravelMode;
 
 public class BiCycling implements TravelMode {
     @Override
